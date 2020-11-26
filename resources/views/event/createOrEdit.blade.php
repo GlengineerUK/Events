@@ -148,7 +148,7 @@
         <div class="w-full xl:w-3/5 max-w-600 xl:mx-auto  my-2 p-3 border rounded shadow-sm bg-white" >
 
             <div class="flex justify-between" >
-                <a href="/event" class="py-5 lg:py-3 xl:py-2  px-10 lg:px-5 xl:px-4 m-4 xl:m-1 rounded-full bg-red-600 hover:bg-red-500 text-white text-3xl lg:text-xl xl:text-base font-semibold">Cancel</a>
+                <a href="/" class="py-5 lg:py-3 xl:py-2  px-10 lg:px-5 xl:px-4 m-4 xl:m-1 rounded-full bg-red-600 hover:bg-red-500 text-white text-3xl lg:text-xl xl:text-base font-semibold">Cancel</a>
                 <button class="py-5 lg:py-3 xl:py-2 px-10 lg:px-5 xl:px-4 m-4 xl:m-1 rounded-full bg-purple-600 hover:bg-purple-500 text-white text-3xl lg:text-xl xl:text-base font-semibold" @click.prevent="addShift">Add Shift</button>
                 <button type="submit" class="py-5 lg:py-3 xl:py-2 px-10 lg:px-5 xl:px-4 m-4 xl:m-1 rounded-full bg-green-600 hover:bg-green-500 text-white text-3xl lg:text-xl xl:text-base font-semibold">Submit</button>
             </div>
