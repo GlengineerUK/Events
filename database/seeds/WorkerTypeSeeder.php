@@ -16,8 +16,8 @@ class WorkerTypeSeeder extends Seeder
         foreach ($types as $type)
         {
             $record = new WorkerType();
-            $record['type'] = $type;
-            $record['description'] = 'Sample description';
+            $record->type = $type;
+            $record->description = 'Sample description';
             $record->save();
         }
     }
