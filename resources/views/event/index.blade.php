@@ -13,7 +13,7 @@
 <div class="lg:w-1/2 xl:w-1/3 lg:mx-auto mb-4 flex">
     <h1 class="text-4xl lg:text-2xl font-bold text-purple-600">Events list</h1>
     <div class="flex-1"></div>
-    <a href="/event/create" class="py-3 px-6 lg:py-2 lg:px-4 m-4 lg:m-2 rounded-full bg-purple-600 hover:bg-purple-500 text-white text-2xl lg:text-sm">New Event</a>
+    <a href="/create" class="py-3 px-6 lg:py-2 lg:px-4 m-4 lg:m-2 rounded-full bg-purple-600 hover:bg-purple-500 text-white text-2xl lg:text-sm">New Event</a>
 
 </div>
 
