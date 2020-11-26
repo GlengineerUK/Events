@@ -34,7 +34,7 @@ class EventController extends Controller
         return view('event.createOrEdit')->with([
             'workerTypes' => $workerTypes,
             'event' => $event,
-            'target' => '/event',
+            'target' => '/',
         ]);
     }
 
@@ -70,7 +70,7 @@ class EventController extends Controller
         $event = Event::create($data);
 
 
-        return redirect('/event')->with('success', 'Event created.');
+        return redirect('/')->with('success', 'Event created.');
     }
 
     /**
@@ -96,7 +96,7 @@ class EventController extends Controller
         return view('event.createOrEdit')->with([
             'workerTypes' => $workerTypes,
             'event' => $event->load('shifts', 'shifts.workerTypes'),
-            'target' => '/event/' . $event->id,
+            'target' => '/' . $event->id,
         ]);
     }
 
@@ -118,7 +118,7 @@ class EventController extends Controller
                 (new HasManyUpdater($event, Shift::class))->update($data['shift'], true);
             }
         });
-        return redirect('/event')->with('success', 'Event updated.');
+        return redirect('/')->with('success', 'Event updated.');
     }
 
     /**
@@ -130,7 +130,7 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         $event->delete();
-        return redirect('/event')->with('success', 'Event deleted.');
+        return redirect('/')->with('success', 'Event deleted.');
     }
 
     /**
