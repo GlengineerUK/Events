@@ -25,7 +25,7 @@
                 {{ $event['date'] }}
             </div>
             <div class="flex-1"></div>
-            <a href="/event/{{ $event->id }}/edit" class="py-3 px-6 lg:py-2 lg:px-4 m-4 lg:m-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-2xl lg:text-sm">Edit</a>
+            <a href="/{{ $event->id }}/edit" class="py-3 px-6 lg:py-2 lg:px-4 m-4 lg:m-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-2xl lg:text-sm">Edit</a>
         </div>
 
 
