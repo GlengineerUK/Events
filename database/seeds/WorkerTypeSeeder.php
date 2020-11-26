@@ -21,7 +21,4 @@ class WorkerTypeSeeder extends Seeder
             $record->save();
         }
     }
-
-
-
 }
