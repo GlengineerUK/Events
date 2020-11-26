@@ -24,7 +24,7 @@
             <div class="flex-1"></div>
 
             @if(gettype($event->id) === 'integer')
-                <form action="/event/{{$event->id}}" method="POST">
+                <form action="/{{$event->id}}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="py-3 px-6 xl:py-2 xl:px-4 m-4 xl:m-2 rounded-full bg-red-600 hover:bg-red-500 text-white text-2xl lg:text-xl xl:text-sm">Delete Event</button>
