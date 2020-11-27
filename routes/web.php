@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', 'EventController');
+Route::get('/{event}/edit', 'EventController@edit');
+Route::patch('/{event}', 'EventController@update');

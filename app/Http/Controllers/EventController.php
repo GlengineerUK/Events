@@ -81,16 +81,17 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        //
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Event  $event
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+     * @param Request $request
+     * @param \App\Event $event
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
      */
-    public function edit(Event $event)
+    public function edit(Request $request, Event $event)
     {
         $workerTypes = WorkerType::all();
         return view('event.createOrEdit')->with([
